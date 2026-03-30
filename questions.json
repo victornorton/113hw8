@@ -1,0 +1,236 @@
+{
+  "questions": [
+    {
+      "question": "What country contains the epicenter of the largest earthquake ever reliably recorded?",
+      "type": "multiple_choice",
+      "options": ["china", "united states", "japan", "chile", "indonesia"],
+      "answer": "chile",
+      "category": "Earthquakes",
+      "difficulty": "4"
+    },
+    {
+      "question": "All tornadoes spin in the same direction.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tornadoes",
+      "difficulty": "2"
+    },
+    {
+      "question": "In 2005, what hurricane devastated New Orleans? (Capitalize Name)",
+      "type": "short_answer",
+      "answer": "Katrina",
+      "category": "Hurricanes",
+      "difficulty": "1"
+    },
+    {
+      "question": "Type of fault is most likely to create a tsunami?",
+      "type": "multiple_choice",
+      "options": ["strike-slip", "megathrust", "intraplate", "transform"],
+      "answer": "megathrust",
+      "category": "Tsunamis",
+      "difficulty": "3"
+    },
+    {
+      "question": "Taking shelter under a highway overpass can protect you from a tornado.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tornadoes",
+      "difficulty": "2"
+    },
+    {
+      "question": "Which wave type is usually the first to arrive after an earthquake?",
+      "type": "multiple_choice",
+      "options": ["S-wave", "P-wave", "Surface wave", "Love wave"],
+      "answer": "P-wave",
+      "category": "Earthquakes",
+      "difficulty": "1"
+    },
+    {
+      "question": "A tsunami in deep water travels slower than in shallow water.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tsunamis",
+      "difficulty": "2"
+    },
+    {
+      "question": "Which hurricane category has winds over 157 mph?",
+      "type": "short_answer",
+      "answer": "5",
+      "category": "Hurricanes",
+      "difficulty": "2"
+    },
+    {
+      "question": "A tornado watching means one has been spotted.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tornadoes",
+      "difficulty": "1"
+    },
+    {
+      "question": "What is a common precursor to a major earthquake?",
+      "type": "multiple_choice",
+      "options": ["aftershocks", "foreshocks", "storm surge", "heat wave"],
+      "answer": "foreshocks",
+      "category": "Earthquakes",
+      "difficulty": "2"
+    },
+    {
+      "question": "The 2011 Tohoku earthquake in Japan led to what type of disaster?",
+      "type": "short_answer",
+      "answer": "Tsunami",
+      "category": "Tsunamis",
+      "difficulty": "3"
+    },
+    {
+      "question": "A storm surge is most directly associated with hurricanes.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Hurricanes",
+      "difficulty": "1"
+    },
+    {
+      "question": "Which month is peak tornado season in the United States?",
+      "type": "multiple_choice",
+      "options": ["January", "April", "June", "October"],
+      "answer": "April",
+      "category": "Tornadoes",
+      "difficulty": "2"
+    },
+    {
+      "question": "A magnitude 9 earthquake is _____ times stronger than magnitude 7?",
+      "type": "short_answer",
+      "answer": "100",
+      "category": "Earthquakes",
+      "difficulty": "3"
+    },
+    {
+      "question": "The 1906 San Francisco earthquake was caused by which fault?",
+      "type": "short_answer",
+      "answer": "San Andreas",
+      "category": "Earthquakes",
+      "difficulty": "3"
+    },
+    {
+      "question": "In the Saffir-Simpson scale, category 1 hurricane winds start at 74 mph.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Hurricanes",
+      "difficulty": "2"
+    },
+    {
+      "question": "Tsunami waves in the open ocean can exceed 30 feet in height.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tsunamis",
+      "difficulty": "1"
+    },
+    {
+      "question": "What term describes the point on the surface above the earthquake focus?",
+      "type": "short_answer",
+      "answer": "Epicenter",
+      "category": "Earthquakes",
+      "difficulty": "2"
+    },
+    {
+      "question": "The 2004 Indian Ocean tsunami was triggered by a _____ earthquake.",
+      "type": "short_answer",
+      "answer": "megathrust",
+      "category": "Tsunamis",
+      "difficulty": "4"
+    },
+    {
+      "question": "Hurricanes are called typhoons in the Western Pacific.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Hurricanes",
+      "difficulty": "3"
+    },
+    {
+      "question": "The Fujita scale measures tornado intensity based on what?",
+      "type": "multiple_choice",
+      "options": ["duration", "path length", "damage", "temperature"],
+      "answer": "damage",
+      "category": "Tornadoes",
+      "difficulty": "3"
+    },
+    {
+      "question": "Liquefaction during earthquakes occurs when soil behaves like _____ .",
+      "type": "short_answer",
+      "answer": "liquid",
+      "category": "Earthquakes",
+      "difficulty": "4"
+    },
+    {
+      "question": "Storm surge is the number one cause of hurricane fatalities.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Hurricanes",
+      "difficulty": "4"
+    },
+    {
+      "question": "Tornadoes are most frequent in what zone of the USA?",
+      "type": "short_answer",
+      "answer": "Tornado Alley",
+      "category": "Tornadoes",
+      "difficulty": "2"
+    },
+    {
+      "question": "Seismographs measure earth motion in _____ .",
+      "type": "multiple_choice",
+      "options": ["kilometers", "seconds", "magnitude", "amplitude"],
+      "answer": "amplitude",
+      "category": "Earthquakes",
+      "difficulty": "1"
+    },
+    {
+      "question": "A tsunami can travel across an entire ocean basin.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Tsunamis",
+      "difficulty": "2"
+    },
+    {
+      "question": "The deadliest U.S. tornado outbreak in history happened in 1925 and is called ?",
+      "type": "short_answer",
+      "answer": "Tri-State",
+      "category": "Tornadoes",
+      "difficulty": "4"
+    },
+    {
+      "question": "Which of these is least likely to reduce hurricane intensity?",
+      "type": "multiple_choice",
+      "options": ["cold water", "landfall", "high wind shear", "warm water"],
+      "answer": "warm water",
+      "category": "Hurricanes",
+      "difficulty": "4"
+    },
+    {
+      "question": "Earthquake swarms involve many small quakes occurring in _____ .",
+      "type": "short_answer",
+      "answer": "short period",
+      "category": "Earthquakes",
+      "difficulty": "2"
+    },
+    {
+      "question": "In what environment is a tsunami wave most dangerous?",
+      "type": "short_answer",
+      "answer": "coastline",
+      "category": "Tsunamis",
+      "difficulty": "3"
+    },
+    {
+      "question": "A tropical cyclone in the Atlantic is called a hurricane.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Hurricanes",
+      "difficulty": "1"
+    },
+    {
+      "question": "A tornado with a visible condensation funnel must always touch the ground.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Tornadoes",
+      "difficulty": "2"
+    }
+  ]
+}
