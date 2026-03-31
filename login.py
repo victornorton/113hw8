@@ -1,5 +1,5 @@
 import os
-import pickle
+import json
 import hashlib
 import secrets
 import base64
@@ -15,17 +15,20 @@ class LoginManager:
             self._save()
             return
         try:
-            with open(self.path, 'rb') as f:
-                self.data = pickle.load(f)
-        except Exception:
+            with open(self.path, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+                if not isinstance(self.data, dict):
+                    raise ValueError('Data is not a dictionary')
+        except Exception as e:
+            print(f'Warning: login data could not be loaded ({e}). Reinitializing login data.')
             self.data = {'users': {}, 'deleted': []}
 
     def _save(self):
         dirpath = os.path.dirname(os.path.abspath(self.path))
         if dirpath and not os.path.exists(dirpath):
             os.makedirs(dirpath, exist_ok=True)
-        with open(self.path, 'wb') as f:
-            pickle.dump(self.data, f)
+        with open(self.path, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f)
 
     def _hash_password(self, password, salt=None):
         if salt is None:

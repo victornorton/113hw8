@@ -69,8 +69,13 @@ def choose_question(remaining, username, stats_manager, session_score, questions
     for q in remaining:
         cat = q.get('category', '')
         pref = stats_manager.get_category_preference(username, cat)
-        cat_weight = max(0.1, 0.2 + pref / 10)
-        diff = int(q.get('difficulty', '2'))
+        # emphasize user ratings; low ratings reduce selection chance
+        cat_weight = max(0.1, min(2.0, 0.5 + (pref - 5.0) / 5.0))
+        diff_str = q.get('difficulty', '2')
+        try:
+            diff = int(diff_str)
+        except (TypeError, ValueError):
+            diff = 2
         # Performance based difficulty bias
         if questions_answered > 0:
             ratio = session_score / questions_answered
@@ -257,8 +262,7 @@ def main():
         if choice == '1':
             username = safe_input('Username: ').strip()
             password = safe_input('Password: ').strip()
-            if check_give_up(username, username, login_manager, stats_manager):
-                continue
+            # `I give up.` is only handled while signed in
             if login_manager.verify(username, password):
                 print(f'Welcome back, {username}!')
             else:

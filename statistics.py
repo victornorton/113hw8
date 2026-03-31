@@ -1,5 +1,5 @@
 import os
-import pickle
+import json
 
 class StatisticsManager:
     def __init__(self, path='statistics'):
@@ -12,17 +12,20 @@ class StatisticsManager:
             self._save()
             return
         try:
-            with open(self.path, 'rb') as f:
-                self.data = pickle.load(f)
-        except Exception:
+            with open(self.path, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+                if not isinstance(self.data, dict):
+                    raise ValueError('Data is not a dictionary')
+        except Exception as e:
+            print(f'Warning: statistics data could not be loaded ({e}). Reinitializing statistics data.')
             self.data = {'users': {}, 'deleted': []}
 
     def _save(self):
         dirpath = os.path.dirname(os.path.abspath(self.path))
         if dirpath and not os.path.exists(dirpath):
             os.makedirs(dirpath, exist_ok=True)
-        with open(self.path, 'wb') as f:
-            pickle.dump(self.data, f)
+        with open(self.path, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f)
 
     def get_user_stats(self, username):
         return self.data['users'].get(username, {'correct': 0, 'attempted': 0, 'category_ratings': {}})
