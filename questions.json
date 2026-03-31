@@ -79,7 +79,7 @@
       "type": "short_answer",
       "answer": "Tsunami",
       "category": "Tsunamis",
-      "difficulty": "3"
+      "difficulty": "1"
     },
     {
       "question": "A storm surge is most directly associated with hurricanes.",
@@ -122,7 +122,7 @@
       "type": "true_false",
       "answer": "false",
       "category": "Tsunamis",
-      "difficulty": "1"
+      "difficulty": "2"
     },
     {
       "question": "What term describes the point on the surface above the earthquake focus?",
@@ -187,7 +187,7 @@
       "type": "true_false",
       "answer": "true",
       "category": "Tsunamis",
-      "difficulty": "2"
+      "difficulty": "1"
     },
     {
       "question": "The deadliest U.S. tornado outbreak in history happened in 1925 and is called ?",
@@ -219,6 +219,14 @@
       "difficulty": "3"
     },
     {
+      "question": "Which of the following CAN'T create a tsunami?",
+      "type": "multiple_choice",
+      "options": ["earthquakes", "underwater landslides", "nuclear weapons testing", "severe weather patterns"],
+      "answer": "nuclear bombs",
+      "category": "Tsunamis",
+      "difficulty": "4"
+    },
+    {
       "question": "A tropical cyclone in the Atlantic is called a hurricane.",
       "type": "true_false",
       "answer": "true",
@@ -231,6 +239,36 @@
       "answer": "false",
       "category": "Tornadoes",
       "difficulty": "2"
+    },
+    {
+      "question": "What hurricane is tied with Katrina as the most costly U.S Hurricane?",
+      "type": "multiple_choice",
+      "options" :["Ian", "Sandy", "Harvey", "Helene"],
+      "answer": "Harvey",
+      "category": "Hurricanes",
+      "difficulty": "3"
+    },
+    {
+      "question": "A tornado is smaller than a hurricane.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Tornadoes",
+      "difficulty": "1"
+    },
+    {
+      "question": "Which of these radar signals can be a sign of a Tornado?",
+      "type": "multiple_choice",
+      "options":["bow echo", "hook echo", "spiral echo", "hail core"],
+      "answer": "hook echo",
+      "category": "Tornadoes",
+      "difficulty": "3"
+    },
+    {
+      "question": "In which month in 2021 did a deadly ef4 tornado strike Mayfield, Kentucky? ",
+      "type": "short_answer",
+      "answer": "December",
+      "category": "Tornadoes",
+      "difficulty": "4"
     }
   ]
 }

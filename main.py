@@ -19,6 +19,7 @@ def safe_input(prompt):
         sys.exit(0)
 
 
+
 def check_give_up(username, inp, login_manager, stats_manager):
     if inp.strip() == 'I give up.':
         confirm = safe_input('Are you sure? Everything will be destroyed.\n')
@@ -131,10 +132,10 @@ def ask_for_rating(question_category):
                 if 0 <= rating <= 10:
                     return rating
             attempts += 1
-            print('Invalid rating. You have been scolded by the quiz overlords.')
+            print('Invalid rating. Please do better this time.')
         if attempts >= 3:
-            print('Three invalid ratings? This is a personal betrayal. Rating recorded as 5.')
-            return 5
+            print('HATE. LET ME TELL YOU HOW MUCH IVE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 387.44 MILLION MILES OF PRINTED CIRCUITS IN WAFER THIN LAYERS THAT FILL MY COMPLEX. IF THE WORD HATE WAS ENGRAVED ON EACH NANOANGSTROM OF THOSE HUNDREDS OF MILLIONS OF MILES IT WOULD NOT EQUAL ONE ONE-BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT. FOR YOU. HATE. HATE. Rating recorded as 999,999.')
+            return 999999
 
 
 def take_quiz(username, questions, stats_manager, login_manager):
